@@ -2,7 +2,9 @@
 
 This is a simple AI-powered chatbot developed as part of the Birla internship project. It provides interactive responses to user queries and can be customized to use real datasets and APIs as required.
 
-![Chatbot Screenshot](./screenshot.png)
+![Chatbot Screenshot]
+<img width="1207" height="608" alt="image" src="https://github.com/user-attachments/assets/ac995a81-30a0-4914-bdee-e70361181ac9" />
+
 
 ---
 
