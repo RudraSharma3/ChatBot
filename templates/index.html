@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bribal - Smart Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <h1 class="bribal-heading">🧠 Bribal - Your Smart Assistant</h1>
+
+        <div class="chat-box">
+            <input type="text" id="query" class="chat-input" placeholder="Ask anything like 'Amit Sharma ki mail id' or 'What is AI?'..." />
+            <button onclick="sendMessage()" class="chat-btn">Ask Bribal</button>
+        </div>
+
+        <div id="response" class="response-box animated-glow"></div>
+    </div>
+
+    <script>
+        function sendMessage() {
+            const query = document.getElementById("query").value;
+            fetch("/chat", {
+                method: "POST",
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ query: query })
+            })
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById("response").innerHTML = `<strong>Response:</strong><br>${data.response}`;
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+python -m venv venv   // First run this comand in terminal to create venv if it is not there in folder 
+.\venv\Scripts\Activate // Run this comand to Activate venv or virtual environment
+python app.py   // run this after all above steps to open chatbot

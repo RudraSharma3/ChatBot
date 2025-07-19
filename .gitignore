@@ -1,0 +1,59 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables / secrets
+.env
+.env.*
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# VS Code settings
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Streamlit cache
+.streamlit/config.toml
+.streamlit/secrets.toml
+
+# Compiled files
+*.so
+*.dll
+*.dylib
+*.pyd
+
+# Test & coverage
+.coverage
+.cache/
+pytest_cache/
+
+# macOS files
+*.swp
+*.swo
+
+# Node (in case frontend)
+node_modules/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Pip tools
+pip-log.txt
+pip-delete-this-directory.txt
